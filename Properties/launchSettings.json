@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Koerperwerkstatt": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\IIS Express\\iisexpress.exe",
+      "commandLineArgs": " /port:1992 /path:c:\\MyData\\Private\\Projects\\Html\\physio-rosenberger.github.io"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js"></script>
+  <!--<script src="https://www.openlayers.org/api/OpenLayers.js"></script>-->
+  <script src="scripts/OpenLayers.js"></script>
+  <script src="scripts/map.js"></script>
+  <link href="styles/layout.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav-include">To be replaced by the nav-main.</div>
+    <table>
+      <tr>
+        <td>Adresse:</td>
+        <td>
+          Caesargasse 4
+          <br />
+          8160 Weiz
+        </td>
+      </tr>
+      <tr>
+        <td>Telefon:</td>
+        <td><a href="tel:0664 38 35 602">0664 38 35 602</a></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><a href="mailto:da.rosenberger@aon.at?subject=Termin Anfrage">da.rosenberger@aon.at</a></td>
+      </tr>
+    </table>
+
+    <section class="map">
+      <div id="map"></div>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", includeNavigation, false);
+    document.addEventListener("DOMContentLoaded", createMap, false);
+  </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  clear: both;
+}
+
+h2 {
+  /*margin-top: 1em;*/
+  font-size: 1.2rem;
+  clear: both;
+}
+
+article {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+hr {
+  margin-top: 1em;
+  float: left;
+  width: 100%;
+}
+
+table {
+  clear: both;
+}
+
+tr {
+  vertical-align: text-top;
+}
+
+td {
+  padding: 0.5em 0.4em 0 0.4em
+}
+
+html, body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  /*-webkit-text-size-adjust: 100%;*/ /* do not scale text when changing orientation */
+}
+
+.container {
+  font-family: Quicksand, Helvetica;
+  color: #404040;
+  background: white;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: hidden; /* make sure floated children contribute to size of container */
+}
+
+nav {
+  width: 100%;
+  font-size: 1rem;
+  position: relative; /* Make sure the dropDownBtn can be positioned relative to the nav */
+}
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    font-size: 1.2em;
+    float: left;
+    color: blue;
+    text-decoration: none;
+  }
+
+    nav a:hover {
+      background: lightyellow;
+      color: darkblue;
+    }
+
+  /* By default hide all nav buttons except "Start" and the drop-down */
+  nav li:not(:first-child) {
+    display: none;
+  }
+
+  /*nav li:first-child a {
+    padding-left: 0;
+  }*/
+
+  nav li:last-child a {
+    padding: 0;
+  }
+
+  nav li#selected a {
+    background: yellow;
+    color: darkblue;
+  }
+
+  nav li.dropDownBtn {
+    /*float: right;*/
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav.allItems li {
+    /*float: none;*/
+    clear: both;
+    display: block;
+    /*text-align: left;*/
+  }
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  clear: both;
+}
+
+.welcomeLeft {
+  flex: 1;
+  order: 1;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.welcomeRight {
+  flex: 1;
+  order: 2;
+}
+
+  .welcomeRight > img {
+    width: 100%;
+  }
+
+.welcomeHeader {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+
+.headerLogo {
+  float: left;
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  height: 5rem;
+}
+
+.headerText {
+  float: left;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.headerTextTitle {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.headerTextSubTitle {
+  font-size: 1.3rem;
+}
+
+.welcomeText {
+  clear: both;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.contact-Address {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 30rem;
+}
+
+.wrappingText {
+  clear: both;
+}
+
+.flowTextLeft {
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+.imageRight {
+  width: 40%;
+  float: right;
+  margin-left: 1em;
+}
+
+.flowTextRight {
+  width: 100%;
+  clear: both;
+  float: right;
+}
+
+.imageLeft {
+  width: 30%;
+  float: left;
+  margin-right: 1em;
+}
+
+.flowImage {
+  width: 40%;
+  margin: 1em 1em;
+}
+
+.flowImageBig {
+  width: 90%;
+  display: block;
+  margin: 1em auto 1em auto;
+}
+
+.centerImage {
+  width: 40%;
+  display: block;
+  border-radius: 50%;
+  margin: 1em auto 1em auto;
+}
+
+span.firstPriceColumn {
+  width: 5em;
+  float: left;
+}
+
+.aboutMe {
+  clear: both;
+}
+
+.aboutMe > img {
+  width: 16em;
+}
+
+.fitFirstColumn td:first-child {
+  /*width: auto;*/
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* Show all menu buttons. */
+  nav li:not(:first-child) {
+    display: inline-block;
+  }
+
+  /* Hide the drop-down. */
+  nav li.dropDownBtn {
+    display: none;
+  }
+
+  .welcome {
+    flex-direction: row;
+  }
+
+  .welcomeLeft {
+    margin-right: 2em;
+  }}
+
+/*@media only screen and (orientation: landscape) {
+  .welcome {
+    flex-direction: row;
+  }
+}*/
+
